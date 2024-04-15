@@ -20,5 +20,46 @@ namespace toDo
         {
             InitializeComponent();
         }
+
+        private void btn1_Click(object sender, RoutedEventArgs e)
+        {
+            list.Items.Add((string)txtBox.Text);
+            txtBox.Clear();
+        }
+        private void btn2_Click(object sender, RoutedEventArgs e)
+        {
+            int szam = list.SelectedItems.IndexOf(list.SelectedItems);
+            list.SelectedIndex = szam;
+            
+        }
+
+        private void btn3T_Click(object sender, RoutedEventArgs e)
+        {
+           
+            if (list.Items.Count != 0)
+            { 
+                list.Items.Clear();
+            } 
+            else {
+                MessageBox.Show("A listbox üres, töltse fel mielött törölne.", "Save error", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+            
+        }
+        private void btn4T_Click(object sender, RoutedEventArgs e)
+        {
+            if (list.Items.Count > 0)
+            {
+                list.Items.Remove(list.SelectedItem);
+            }
+            else
+            {
+                MessageBox.Show("A listbox üres, töltse fel mielött törölne.", "Save error", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
+        private void kilep_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
     }
 }

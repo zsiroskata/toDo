@@ -7,6 +7,24 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <ListBox x:Name="list" HorizontalAlignment="Left" Height="212" Margin="46,32,0,0" VerticalAlignment="Top" Width="198" Background="#FFEDD6D6">
+            <ListBoxItem>Bevásárlás</ListBoxItem>
+            <ListBoxItem>nem tudom</ListBoxItem>
+            <ListBoxItem>valami</ListBoxItem>
+        </ListBox>
+        <!-- Hozzáadás-->
+        <Button x:Name="btn1" Content="Hozzáadás" HorizontalAlignment="Left" Height="57" Margin="280,120,0,0" VerticalAlignment="Top" Width="204" Background="#FF47F34A" FontSize="20" Click="btn1_Click"/>
+
+        <TextBox x:Name="txtBox" HorizontalAlignment="Left" Height="60" Margin="280,32,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="204" BorderBrush="#FFB3C2EF" Background="#FFE6E6E6"/>
+        <!-- módosítás -->
+        <Button x:Name="btn2_M" Content="Módosítás" HorizontalAlignment="Left" Height="57" Margin="280,198,0,0" VerticalAlignment="Top" Width="204" Background="#FFFBF78D" FontSize="20" Click="btn2_Click"/>
+
+        <!-- törlés -->
+        <Button x:Name="btn3_T" Content="Egész törlés" HorizontalAlignment="Left" Height="57" Margin="46,270,0,0" VerticalAlignment="Top" Width="204" Background="#FFFF7D7D" FontSize="20" Click="btn3T_Click"/>
+
+        <Button x:Name="kilep" Content="kilép" HorizontalAlignment="Left" Height="57" Margin="280,359,0,0" VerticalAlignment="Top" Width="213" Background="#FFFD0000" FontSize="30" Click="kilep_Click"/>
+        <Button x:Name="btn4_T_Copy" Content="Törlés" HorizontalAlignment="Left" Height="57" Margin="280,270,0,0" VerticalAlignment="Top" Width="204" Background="#FFFF7D7D" FontSize="20" Click="btn4T_Click"/>
+
 
     </Grid>
 </Window>
