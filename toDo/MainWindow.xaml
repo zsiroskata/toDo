@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:toDo"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="valmi" Height="450" Width="800">
     <Grid>
         <ListBox x:Name="list" HorizontalAlignment="Left" Height="212" Margin="46,32,0,0" VerticalAlignment="Top" Width="198" Background="#FFEDD6D6">
             <ListBoxItem>Bevásárlás</ListBoxItem>
@@ -24,6 +24,12 @@
 
         <Button x:Name="kilep" Content="kilép" HorizontalAlignment="Left" Height="57" Margin="280,359,0,0" VerticalAlignment="Top" Width="213" Background="#FFFD0000" FontSize="30" Click="kilep_Click"/>
         <Button x:Name="btn4_T_Copy" Content="Törlés" HorizontalAlignment="Left" Height="57" Margin="280,270,0,0" VerticalAlignment="Top" Width="204" Background="#FFFF7D7D" FontSize="20" Click="btn4T_Click"/>
+
+        <!-- másolás -->
+        <Button x:Name="btn5_C" Content="Másolás" HorizontalAlignment="Left" Height="57" Margin="46,351,0,0" VerticalAlignment="Top" Width="204" Background="#FFCE9AF3" FontSize="20" Click="btn5C_Click"/>
+
+        <ListBox x:Name="list_Copy" HorizontalAlignment="Left" Height="212" Margin="548,42,0,0" VerticalAlignment="Top" Width="198" Background="#FFF7E6E6">
+        </ListBox>
 
 
     </Grid>
