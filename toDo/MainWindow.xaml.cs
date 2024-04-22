@@ -139,7 +139,6 @@ namespace toDo
         // Kilépés gomb 
         private void kilep_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show($"Végrehajtott feladat(ok) száma: {list.Items.Count}");
             Application.Current.Shutdown();
         }
 
